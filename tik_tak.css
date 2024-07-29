@@ -1,0 +1,83 @@
+.wrapper{
+    padding: 0px;
+    margin: 0px;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-image: url(gradient-bg.jpg);
+    background-size: cover;
+}
+
+.upper{
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    padding: 0.3rem 3rem;
+    position: absolute;   /* position absolute isliya ki ha kyoki ya move karna tha wrapper ka upper*/
+    top: 3rem;
+    left: 50%;
+    color: white;
+}
+.btn{
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    padding: 0.3rem 3rem;
+    color: white;
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    opacity: 0;
+}
+.box{
+    border: 2px solid rgba(255, 255, 255, 0.25);
+   display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 20rem; 
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(7px);
+  aspect-ratio: 1/1;
+
+}
+.a{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.box1,.box2,.box5,.box4{
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+
+.box3,.box6{
+    border-bottom: 2px solid #fff;
+}
+
+.box7,.box8{
+    border-right: 2px solid #fff;
+}
+.btn.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
+
+
+
